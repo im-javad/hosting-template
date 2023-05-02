@@ -1,0 +1,70 @@
+// main colors variables
+$main-color-1: #051622;
+$main-color-2: #deb992;
+$main-color-3: #1ba098;
+$main-color-4: #444444;
+
+// font variables
+$font-path: "../font";
+$font-family: "Roboto-Medium";
+$font-weight: 700;
+$font-style: "normal";
+
+// margin variables
+$standard-1-margin-y: 5rem;
+
+//* ----------------------------------------------------------------
+
+// general style
+.my-5-custom {
+  margin: $standard-1-margin-y 0;
+}
+
+//* -----------------------------------------------------------------
+
+// extra
+@font-face {
+  font-family: $font-family;
+  src: url(#{$font-path}/Roboto-Medium.ttf);
+}
+
+//* --------------------------------------------------------------------------
+
+// resets
+*,
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+//* -----------------------------------------------------------
+
+// steps section
+section#steps {
+  h3 {
+    color: $main-color-1;
+  }
+  p {
+    color: $main-color-4;
+  }
+  a {
+    transition: all 0.5s ease;
+    color: $main-color-3;
+  }
+  a:hover {
+    i {
+      transition: all 0.5s ease;
+      margin-left: 1rem !important;
+    }
+  }
+}
