@@ -121,6 +121,47 @@ nav#navbar .collapse ul li:hover::after {
   width: 100%;
 }
 
+header#header .carousel .carousel-control-prev i {
+  color: #444444;
+  font-size: 45px;
+  position: absolute;
+  bottom: -50px;
+  right: -225%;
+}
+header#header .carousel .carousel-control-next i {
+  color: #444444;
+  font-size: 45px;
+  position: absolute;
+  bottom: -50px;
+  left: -225%;
+}
+header#header .carousel .carousel-inner .carousel-item i.gear-1-1 {
+  position: absolute;
+  top: 35px;
+  left: 21px;
+  font-size: 20px;
+  color: rgb(82, 44, 14);
+  animation: gear-1-1 15s infinite linear;
+}
+header#header .carousel .carousel-inner .carousel-item i.gear-1-2 {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+  font-size: 40px;
+  color: rgb(233, 93, 0);
+  animation: gear-1-2 15s infinite linear;
+}
+@keyframes gear-1-1 {
+  100% {
+    transform: rotate(-350deg);
+  }
+}
+@keyframes gear-1-2 {
+  100% {
+    transform: rotate(350deg);
+  }
+}
+
 section#steps .steps-title {
   margin: 7rem 0px -1rem 0px;
 }
