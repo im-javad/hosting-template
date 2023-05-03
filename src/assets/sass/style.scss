@@ -13,6 +13,14 @@ $font-style: "normal";
 // margin variables
 $standard-1-margin-y: 5rem;
 
+//* -----------------------------------------------------------------
+
+// extra
+@font-face {
+  font-family: $font-family;
+  src: url(#{$font-path}/Roboto-Medium.ttf);
+}
+
 //* ----------------------------------------------------------------
 
 // general style
@@ -43,15 +51,28 @@ $standard-1-margin-y: 5rem;
 .root-color-4 {
   color: $main-color-4 !important;
 }
-.animation {
-  transition: all 0.5s ease;
-}
+
 //* -----------------------------------------------------------------
 
-// extra
-@font-face {
-  font-family: $font-family;
-  src: url(#{$font-path}/Roboto-Medium.ttf);
+@mixin transition($type: all, $time: 0.5s, $effect: ease) {
+  transition: $type $time $effect;
+}
+@mixin after-line(
+  $bottom: 0,
+  $left: 0,
+  $right: 0,
+  $height: 2px,
+  $background-color: $main-color-4
+) {
+  content: "";
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  height: $height;
+  background-color: $background-color;
+  width: 0;
+  @include transition();
 }
 
 //* --------------------------------------------------------------------------
@@ -79,6 +100,7 @@ a {
 
 // navbar section
 nav#navbar {
+  min-height: 65px;
   button {
     border: 0;
     .custom-nav-toggle {
@@ -88,17 +110,42 @@ nav#navbar {
       background: $main-color-1;
       color: #deb992;
       bottom: -3px;
-    }
-    .custom-nav-toggle:hover {
-      color: $main-color-3;
+      &:hover {
+        color: $main-color-3;
+      }
     }
   }
   .collapse {
-    a {
-      transition: all 0.5s ease;
+    a#sign-in {
+      position: relative;
+      @include transition();
+      &::after {
+        @include after-line(-7px, 0, 0, 2px, $main-color-3);
+      }
+      &:hover {
+        color: $main-color-4 !important;
+        &::after {
+          width: 100%;
+        }
+      }
     }
-    a:hover {
-      color: $main-color-3 !important;
+    ul {
+      li {
+        display: inline-block;
+        position: relative;
+        a {
+          @include transition();
+          &:hover {
+            color: $main-color-3 !important;
+          }
+        }
+        &::after {
+          @include after-line();
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -122,15 +169,15 @@ section#steps {
       color: $main-color-4;
     }
     a {
-      transition: all 0.5s ease;
+      @include transition();
       color: $main-color-3;
       i {
-        transition: all 0.5s ease;
+        @include transition();
       }
-    }
-    a:hover {
-      i {
-        margin-left: 1rem !important;
+      &:hover {
+        i {
+          margin-left: 1rem !important;
+        }
       }
     }
   }
@@ -152,15 +199,15 @@ footer#footer {
         color: $main-color-3;
         a,
         i {
-          transition: all 0.5s ease;
+          @include transition();
           color: $main-color-3;
         }
-      }
-      li:hover {
-        color: $main-color-4;
-        a,
-        i {
+        &:hover {
           color: $main-color-4;
+          a,
+          i {
+            color: $main-color-4;
+          }
         }
       }
     }

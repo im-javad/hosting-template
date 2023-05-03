@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../font/Roboto-Medium.ttf);
+}
 .my-5-custom {
   margin: 5rem 0;
 }
@@ -34,14 +38,6 @@
   color: #444444 !important;
 }
 
-.animation {
-  transition: all 0.5s ease;
-}
-
-@font-face {
-  font-family: "Roboto-Medium";
-  src: url(../font/Roboto-Medium.ttf);
-}
 *,
 body {
   font-family: "Roboto-Medium";
@@ -62,6 +58,9 @@ a {
   text-decoration: none;
 }
 
+nav#navbar {
+  min-height: 65px;
+}
 nav#navbar button {
   border: 0;
 }
@@ -76,11 +75,50 @@ nav#navbar button .custom-nav-toggle {
 nav#navbar button .custom-nav-toggle:hover {
   color: #1ba098;
 }
-nav#navbar .collapse a {
+nav#navbar .collapse a#sign-in {
+  position: relative;
   transition: all 0.5s ease;
 }
-nav#navbar .collapse a:hover {
+nav#navbar .collapse a#sign-in::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #1ba098;
+  width: 0;
+  transition: all 0.5s ease;
+}
+nav#navbar .collapse a#sign-in:hover {
+  color: #444444 !important;
+}
+nav#navbar .collapse a#sign-in:hover::after {
+  width: 100%;
+}
+nav#navbar .collapse ul li {
+  display: inline-block;
+  position: relative;
+}
+nav#navbar .collapse ul li a {
+  transition: all 0.5s ease;
+}
+nav#navbar .collapse ul li a:hover {
   color: #1ba098 !important;
+}
+nav#navbar .collapse ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #444444;
+  width: 0;
+  transition: all 0.5s ease;
+}
+nav#navbar .collapse ul li:hover::after {
+  width: 100%;
 }
 
 section#steps .steps-title {
