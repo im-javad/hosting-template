@@ -19,7 +19,33 @@ $standard-1-margin-y: 5rem;
 .my-5-custom {
   margin: $standard-1-margin-y 0;
 }
-
+.root-bg-color-1 {
+  background-color: $main-color-1 !important;
+}
+.root-bg-color-2 {
+  background-color: $main-color-2 !important;
+}
+.root-bg-color-3 {
+  background-color: $main-color-3 !important;
+}
+.root-bg-color-4 {
+  background-color: $main-color-4 !important;
+}
+.root-color-1 {
+  color: $main-color-1 !important;
+}
+.root-color-2 {
+  color: $main-color-2 !important;
+}
+.root-color-3 {
+  color: $main-color-3 !important;
+}
+.root-color-4 {
+  color: $main-color-4 !important;
+}
+.animation {
+  transition: all 0.5s ease;
+}
 //* -----------------------------------------------------------------
 
 // extra
@@ -51,20 +77,57 @@ a {
 
 // steps section
 section#steps {
-  h3 {
-    color: $main-color-1;
+  .steps-title {
+    margin: 7rem 0px -1rem 0px;
+    h2 {
+      color: $main-color-3 !important;
+    }
+    h3 {
+      color: $main-color-4;
+    }
   }
-  p {
-    color: $main-color-4;
-  }
-  a {
-    transition: all 0.5s ease;
-    color: $main-color-3;
-  }
-  a:hover {
-    i {
+  .row {
+    h3 {
+      color: $main-color-1;
+    }
+    p {
+      color: $main-color-4;
+    }
+    a {
       transition: all 0.5s ease;
-      margin-left: 1rem !important;
+      color: $main-color-3;
+    }
+    a:hover {
+      i {
+        transition: all 0.5s ease;
+        margin-left: 1rem !important;
+      }
+    }
+  }
+}
+
+// navbar section
+nav#navbar {
+  button {
+    border: 0;
+    .custom-nav-toggle {
+      position: relative;
+      width: 0;
+      font-size: 25px;
+      background: $main-color-1;
+      color: #deb992;
+      bottom: -3px;
+    }
+    .custom-nav-toggle:hover {
+      color: $main-color-3;
+    }
+  }
+  .collapse {
+    a {
+      transition: all 0.5s ease;
+    }
+    a:hover {
+      color: $main-color-3 !important;
     }
   }
 }
