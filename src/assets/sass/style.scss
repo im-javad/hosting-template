@@ -77,37 +77,6 @@ a {
 
 //* -----------------------------------------------------------
 
-// steps section
-section#steps {
-  .steps-title {
-    margin: 7rem 0px -1rem 0px;
-    h2 {
-      color: $main-color-3 !important;
-    }
-    h3 {
-      color: $main-color-4;
-    }
-  }
-  .row {
-    h3 {
-      color: $main-color-1;
-    }
-    p {
-      color: $main-color-4;
-    }
-    a {
-      transition: all 0.5s ease;
-      color: $main-color-3;
-    }
-    a:hover {
-      i {
-        transition: all 0.5s ease;
-        margin-left: 1rem !important;
-      }
-    }
-  }
-}
-
 // navbar section
 nav#navbar {
   button {
@@ -134,6 +103,39 @@ nav#navbar {
   }
 }
 
+// steps section
+section#steps {
+  .steps-title {
+    margin: 7rem 0px -1rem 0px;
+    h2 {
+      color: $main-color-3 !important;
+    }
+    h3 {
+      color: $main-color-4;
+    }
+  }
+  .row {
+    h3 {
+      color: $main-color-1;
+    }
+    p {
+      color: $main-color-4;
+    }
+    a {
+      transition: all 0.5s ease;
+      color: $main-color-3;
+      i {
+        transition: all 0.5s ease;
+      }
+    }
+    a:hover {
+      i {
+        margin-left: 1rem !important;
+      }
+    }
+  }
+}
+
 // footer section
 footer#footer {
   min-height: 350px;
@@ -146,10 +148,19 @@ footer#footer {
     }
     ul {
       li {
+        cursor: pointer;
         color: $main-color-3;
         a,
         i {
+          transition: all 0.5s ease;
           color: $main-color-3;
+        }
+      }
+      li:hover {
+        color: $main-color-4;
+        a,
+        i {
+          color: $main-color-4;
         }
       }
     }

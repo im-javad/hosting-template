@@ -62,30 +62,6 @@ a {
   text-decoration: none;
 }
 
-section#steps .steps-title {
-  margin: 7rem 0px -1rem 0px;
-}
-section#steps .steps-title h2 {
-  color: #1ba098 !important;
-}
-section#steps .steps-title h3 {
-  color: #444444;
-}
-section#steps .row h3 {
-  color: #051622;
-}
-section#steps .row p {
-  color: #444444;
-}
-section#steps .row a {
-  transition: all 0.5s ease;
-  color: #1ba098;
-}
-section#steps .row a:hover i {
-  transition: all 0.5s ease;
-  margin-left: 1rem !important;
-}
-
 nav#navbar button {
   border: 0;
 }
@@ -107,6 +83,32 @@ nav#navbar .collapse a:hover {
   color: #1ba098 !important;
 }
 
+section#steps .steps-title {
+  margin: 7rem 0px -1rem 0px;
+}
+section#steps .steps-title h2 {
+  color: #1ba098 !important;
+}
+section#steps .steps-title h3 {
+  color: #444444;
+}
+section#steps .row h3 {
+  color: #051622;
+}
+section#steps .row p {
+  color: #444444;
+}
+section#steps .row a {
+  transition: all 0.5s ease;
+  color: #1ba098;
+}
+section#steps .row a i {
+  transition: all 0.5s ease;
+}
+section#steps .row a:hover i {
+  margin-left: 1rem !important;
+}
+
 footer#footer {
   min-height: 350px;
   display: flex;
@@ -117,9 +119,18 @@ footer#footer .row h3 {
   color: #deb992;
 }
 footer#footer .row ul li {
+  cursor: pointer;
   color: #1ba098;
 }
 footer#footer .row ul li a,
 footer#footer .row ul li i {
+  transition: all 0.5s ease;
   color: #1ba098;
+}
+footer#footer .row ul li:hover {
+  color: #444444;
+}
+footer#footer .row ul li:hover a,
+footer#footer .row ul li:hover i {
+  color: #444444;
 }
