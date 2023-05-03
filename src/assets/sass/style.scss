@@ -67,6 +67,8 @@ body {
 ul,
 ol,
 li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 a {
@@ -128,6 +130,28 @@ nav#navbar {
     }
     a:hover {
       color: $main-color-3 !important;
+    }
+  }
+}
+
+// footer section
+footer#footer {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  .row {
+    h3 {
+      font-size: 18px;
+      color: $main-color-2;
+    }
+    ul {
+      li {
+        color: $main-color-3;
+        a,
+        i {
+          color: $main-color-3;
+        }
+      }
     }
   }
 }

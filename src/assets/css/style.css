@@ -53,6 +53,8 @@ body {
 ul,
 ol,
 li {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -103,4 +105,21 @@ nav#navbar .collapse a {
 }
 nav#navbar .collapse a:hover {
   color: #1ba098 !important;
+}
+
+footer#footer {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+}
+footer#footer .row h3 {
+  font-size: 18px;
+  color: #deb992;
+}
+footer#footer .row ul li {
+  color: #1ba098;
+}
+footer#footer .row ul li a,
+footer#footer .row ul li i {
+  color: #1ba098;
 }
