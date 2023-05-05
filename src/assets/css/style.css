@@ -15,7 +15,7 @@
 }
 
 .root-bg-color-2 {
-  background-color: #deb992 !important;
+  background-color: #cca57b !important;
 }
 
 .root-bg-color-3 {
@@ -31,7 +31,7 @@
 }
 
 .root-color-2 {
-  color: #deb992 !important;
+  color: #cca57b !important;
 }
 
 .root-color-3 {
@@ -167,6 +167,56 @@ header#header .carousel .carousel-inner .carousel-item i.gear-1-2 {
   }
 }
 
+section#domain .row form .domain-searcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #444444;
+  border-radius: 50px;
+  height: 65px;
+}
+section#domain .row form .domain-searcher input {
+  cursor: pointer;
+  border: 0;
+  color: #051622;
+}
+section#domain .row form .domain-searcher input:focus {
+  box-shadow: none;
+}
+section#domain .row form .domain-searcher i {
+  color: #1ba098;
+  font-size: 25px;
+  transition: all 0.5s ease;
+}
+section#domain .row form .domain-searcher i:hover {
+  color: #e95d00;
+}
+section#domain .row div.domain-types .domain-detail ul {
+  display: flex;
+  justify-content: space-between;
+}
+section#domain .row div.domain-types .domain-detail ul li span {
+  color: #cca57b;
+}
+section#domain .row div.domain-types .domain-detail ul li strong {
+  color: #051622;
+}
+section#domain .row .more-domains {
+  margin-top: 2.75rem;
+}
+section#domain .row .more-domains a {
+  background: #1ba098;
+  color: #efefef;
+  padding: 15px 30px;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+section#domain .row .more-domains a:hover {
+  background: #051622;
+  color: #cca57b;
+}
+
 section#plans .row .plan-box .plan-card {
   transition: all 0.5s ease;
   border: 3.5px solid #1ba098;
@@ -274,7 +324,7 @@ section#contact-us .row form button {
 }
 section#contact-us .row form button:hover {
   background: #051622;
-  color: #deb992;
+  color: #cca57b;
 }
 
 footer#footer {
@@ -284,7 +334,7 @@ footer#footer {
 }
 footer#footer .row h3 {
   font-size: 18px;
-  color: #deb992;
+  color: #cca57b;
 }
 footer#footer .row ul li {
   cursor: pointer;
