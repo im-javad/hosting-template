@@ -3,6 +3,7 @@ $main-color-1: #051622;
 $main-color-2: #deb992;
 $main-color-3: #1ba098;
 $main-color-4: #444444;
+$main-color-5: #e95d00;
 
 // font variables
 $font-path: "../font";
@@ -11,7 +12,8 @@ $font-weight: 700;
 $font-style: "normal";
 
 // margin variables
-$standard-1-margin-y: 5rem;
+$standard-1-margin-top: 5rem;
+$standard-2-margin-top: 10rem;
 
 //* -----------------------------------------------------------------
 
@@ -24,8 +26,11 @@ $standard-1-margin-y: 5rem;
 //* ----------------------------------------------------------------
 
 // general style
-.my-5-custom {
-  margin: $standard-1-margin-y 0;
+.mt-5-custom {
+  margin-top: $standard-1-margin-top;
+}
+.mt-10-custom {
+  margin-top: $standard-2-margin-top;
 }
 .root-bg-color-1 {
   background-color: $main-color-1 !important;
@@ -94,6 +99,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 
 //* -----------------------------------------------------------
@@ -238,6 +244,76 @@ header#header {
   }
 }
 
+// plans section
+section#plans {
+  .row {
+    .plan-box {
+      .plan-card {
+        @include transition();
+        border: 3.5px solid $main-color-3;
+        border-radius: 10px;
+        padding: 20px;
+        h3 {
+          text-align: center;
+          font-size: 20px;
+          color: $main-color-5;
+          font-weight: 600;
+        }
+        p {
+          text-align: center;
+          margin: 20px 0;
+          color: $main-color-1;
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            margin: 0 2px;
+            font-weight: 650;
+            font-size: 23px;
+          }
+        }
+        ul {
+          li {
+            text-align: center;
+            margin-bottom: 15px;
+            i {
+              color: $main-color-1;
+              margin-right: 5px;
+            }
+            b {
+              color: $main-color-4;
+            }
+          }
+        }
+      }
+      .plan-button {
+        display: flex;
+        justify-content: center;
+        a {
+          @include transition();
+          width: 50%;
+          background: $main-color-3;
+          color: #efefef;
+          padding: 10px;
+          border-radius: 3rem;
+          font-weight: 800;
+        }
+      }
+      &:hover {
+        .plan-card {
+          border: 3.5px solid $main-color-1;
+        }
+        .plan-button {
+          a {
+            background: $main-color-1;
+          }
+        }
+      }
+    }
+  }
+}
+
 // steps section
 section#steps {
   .steps-title {
@@ -270,6 +346,9 @@ section#steps {
     }
   }
 }
+
+// contact us section
+section#contact-us {}
 
 // footer section
 footer#footer {

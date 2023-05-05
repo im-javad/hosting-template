@@ -2,8 +2,12 @@
   font-family: "Roboto-Medium";
   src: url(../font/Roboto-Medium.ttf);
 }
-.my-5-custom {
-  margin: 5rem 0;
+.mt-5-custom {
+  margin-top: 5rem;
+}
+
+.mt-10-custom {
+  margin-top: 10rem;
 }
 
 .root-bg-color-1 {
@@ -56,6 +60,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 nav#navbar {
@@ -160,6 +165,63 @@ header#header .carousel .carousel-inner .carousel-item i.gear-1-2 {
   100% {
     transform: rotate(350deg);
   }
+}
+
+section#plans .row .plan-box .plan-card {
+  transition: all 0.5s ease;
+  border: 3.5px solid #1ba098;
+  border-radius: 10px;
+  padding: 20px;
+}
+section#plans .row .plan-box .plan-card h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #e95d00;
+  font-weight: 600;
+}
+section#plans .row .plan-box .plan-card p {
+  text-align: center;
+  margin: 20px 0;
+  color: #051622;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section#plans .row .plan-box .plan-card p span {
+  margin: 0 2px;
+  font-weight: 650;
+  font-size: 23px;
+}
+section#plans .row .plan-box .plan-card ul li {
+  text-align: center;
+  margin-bottom: 15px;
+}
+section#plans .row .plan-box .plan-card ul li i {
+  color: #051622;
+  margin-right: 5px;
+}
+section#plans .row .plan-box .plan-card ul li b {
+  color: #444444;
+}
+section#plans .row .plan-box .plan-button {
+  display: flex;
+  justify-content: center;
+}
+section#plans .row .plan-box .plan-button a {
+  transition: all 0.5s ease;
+  width: 50%;
+  background: #1ba098;
+  color: #efefef;
+  padding: 10px;
+  border-radius: 3rem;
+  font-weight: 800;
+}
+section#plans .row .plan-box:hover .plan-card {
+  border: 3.5px solid #051622;
+}
+section#plans .row .plan-box:hover .plan-button a {
+  background: #051622;
 }
 
 section#steps .steps-title {
