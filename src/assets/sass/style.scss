@@ -348,7 +348,36 @@ section#steps {
 }
 
 // contact us section
-section#contact-us {}
+section#contact-us {
+  .row {
+    form {
+      input,
+      textarea {
+        border: 1px solid $main-color-4;
+        &::placeholder {
+          color: $main-color-4;
+        }
+        &:focus {
+          border: 2px solid $main-color-3 !important;
+          box-shadow: none;
+        }
+      }
+      textarea {
+        font-size: 1.25rem;
+      }
+      button {
+        height: 45px;
+        background: $main-color-3;
+        border: 0;
+        @include transition();
+        &:hover {
+          background: $main-color-1;
+          color: $main-color-2;
+        }
+      }
+    }
+  }
+}
 
 // footer section
 footer#footer {

@@ -250,6 +250,33 @@ section#steps .row a:hover i {
   margin-left: 1rem !important;
 }
 
+section#contact-us .row form input,
+section#contact-us .row form textarea {
+  border: 1px solid #444444;
+}
+section#contact-us .row form input::placeholder,
+section#contact-us .row form textarea::placeholder {
+  color: #444444;
+}
+section#contact-us .row form input:focus,
+section#contact-us .row form textarea:focus {
+  border: 2px solid #1ba098 !important;
+  box-shadow: none;
+}
+section#contact-us .row form textarea {
+  font-size: 1.25rem;
+}
+section#contact-us .row form button {
+  height: 45px;
+  background: #1ba098;
+  border: 0;
+  transition: all 0.5s ease;
+}
+section#contact-us .row form button:hover {
+  background: #051622;
+  color: #deb992;
+}
+
 footer#footer {
   min-height: 350px;
   display: flex;
