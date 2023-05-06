@@ -79,6 +79,9 @@ $standard-2-margin-top: 10rem;
   width: 0;
   @include transition();
 }
+@mixin section-divider($rem-quantity: 5rem) {
+  margin-top: $rem-quantity !important;
+}
 
 //* --------------------------------------------------------------------------
 
@@ -158,6 +161,7 @@ nav#navbar {
 
 // header section
 header#header {
+  @include section-divider();
   .carousel {
     .carousel-control-prev {
       i {
@@ -245,6 +249,7 @@ header#header {
 }
 
 section#domain {
+  @include section-divider(10rem);
   .row {
     form {
       .domain-searcher {
@@ -308,6 +313,7 @@ section#domain {
 
 // plans section
 section#plans {
+  @include section-divider();
   .row {
     .plan-box {
       .plan-card {
@@ -378,6 +384,7 @@ section#plans {
 
 // steps section
 section#steps {
+  @include section-divider();
   .steps-title {
     margin: 7rem 0px -1rem 0px;
     h2 {
@@ -410,10 +417,12 @@ section#steps {
 }
 
 section#about-company {
+  @include section-divider();
 }
 
 // contact us section
 section#contact-us {
+  @include section-divider();
   .row {
     form {
       input,
@@ -446,6 +455,7 @@ section#contact-us {
 
 // footer section
 footer#footer {
+  @include section-divider();
   min-height: 350px;
   display: flex;
   align-items: center;
