@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../font/Roboto-Medium.ttf);
+}
+.mt-5-custom {
+  margin-top: 5rem;
+}
+
+.mt-10-custom {
+  margin-top: 10rem;
+}
+
+.root-bg-color-1 {
+  background-color: #051622 !important;
+}
+
+.root-bg-color-2 {
+  background-color: #cca57b !important;
+}
+
+.root-bg-color-3 {
+  background-color: #1ba098 !important;
+}
+
+.root-bg-color-4 {
+  background-color: #444444 !important;
+}
+
+.root-color-1 {
+  color: #051622 !important;
+}
+
+.root-color-2 {
+  color: #cca57b !important;
+}
+
+.root-color-3 {
+  color: #1ba098 !important;
+}
+
+.root-color-4 {
+  color: #444444 !important;
+}
+
+*,
+body {
+  font-family: "Roboto-Medium";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

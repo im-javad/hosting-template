@@ -1,0 +1,30 @@
+footer#footer {
+  @include section-divider();
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  .row {
+    h3 {
+      font-size: 18px;
+      color: $main-color-2;
+    }
+    ul {
+      li {
+        cursor: pointer;
+        color: $main-color-3;
+        a,
+        i {
+          @include transition();
+          color: $main-color-3;
+        }
+        &:hover {
+          color: $main-color-4;
+          a,
+          i {
+            color: $main-color-4;
+          }
+        }
+      }
+    }
+  }
+}

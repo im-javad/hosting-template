@@ -1,0 +1,23 @@
+@mixin transition($type: all, $time: 0.5s, $effect: ease) {
+  transition: $type $time $effect;
+}
+@mixin after-line(
+  $bottom: 0,
+  $left: 0,
+  $right: 0,
+  $height: 2px,
+  $background-color: $main-color-4
+) {
+  content: "";
+  position: absolute;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  height: $height;
+  background-color: $background-color;
+  width: 0;
+  @include transition();
+}
+@mixin section-divider($rem-quantity: 5rem) {
+  margin-top: $rem-quantity !important;
+}

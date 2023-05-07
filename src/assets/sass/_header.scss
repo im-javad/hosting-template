@@ -1,0 +1,87 @@
+header#header {
+  @include section-divider();
+  .carousel {
+    .carousel-control-prev {
+      i {
+        color: $main-color-4;
+        font-size: 45px;
+        position: absolute;
+        bottom: -50px;
+        right: -225%;
+      }
+    }
+    .carousel-control-next {
+      i {
+        color: $main-color-4;
+        font-size: 45px;
+        position: absolute;
+        bottom: -50px;
+        left: -225%;
+      }
+    }
+    .carousel-inner {
+      .carousel-item {
+        i.gear-1-1 {
+          position: absolute;
+          top: 35px;
+          left: 21px;
+          font-size: 20px;
+          color: rgb(82, 44, 14);
+          animation: gear-1-1 15s infinite linear;
+        }
+        i.gear-1-2 {
+          position: absolute;
+          top: 35px;
+          left: 40px;
+          font-size: 40px;
+          color: rgb(233, 93, 0);
+          animation: gear-1-2 15s infinite linear;
+        }
+        @keyframes gear-1-1 {
+          100% {
+            transform: rotate(-350deg);
+          }
+        }
+        @keyframes gear-1-2 {
+          100% {
+            transform: rotate(350deg);
+          }
+        }
+        // i.cloud-1-1 {
+        //   position: absolute;
+        //   font-size: 30px;
+        //   color: #0c488d;
+        //   bottom: 0;
+        //   left: 0;
+        //   animation: cloud-1-1 10s infinite linear;
+        // }
+        // i.cloud-1-2 {
+        //   position: absolute;
+        //   font-size: 30px;
+        //   color: #0c488d;
+        //   top: 0;
+        //   right: 0;
+        //   animation: cloud-1-2 10s infinite linear;
+        // }
+        // @keyframes cloud-1-1 {
+        //   50% {
+        //     left: 90%;
+        //     color: rgb(0, 122, 37);
+        //   }
+        //   100% {
+        //     left: 0;
+        //   }
+        // }
+        // @keyframes cloud-1-2 {
+        //   50% {
+        //     top: 90%;
+        //     color: rgb(0, 122, 37);
+        //   }
+        //   100% {
+        //     top: 0;
+        //   }
+        // }
+      }
+    }
+  }
+}

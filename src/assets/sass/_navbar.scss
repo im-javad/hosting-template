@@ -1,0 +1,50 @@
+nav#navbar {
+  min-height: 65px;
+  button {
+    border: 0;
+    .custom-nav-toggle {
+      position: relative;
+      width: 0;
+      font-size: 25px;
+      background: $main-color-1;
+      color: #deb992;
+      bottom: -3px;
+      &:hover {
+        color: $main-color-3;
+      }
+    }
+  }
+  .collapse {
+    a#sign-in {
+      position: relative;
+      @include transition();
+      &::after {
+        @include after-line(-7px, 0, 0, 2px, $main-color-3);
+      }
+      &:hover {
+        color: $main-color-4 !important;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+    ul {
+      li {
+        display: inline-block;
+        position: relative;
+        a {
+          @include transition();
+          &:hover {
+            color: $main-color-3 !important;
+          }
+        }
+        &::after {
+          @include after-line();
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

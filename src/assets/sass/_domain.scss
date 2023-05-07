@@ -1,0 +1,62 @@
+section#domain {
+  @include section-divider(10rem);
+  .row {
+    form {
+      .domain-searcher {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid $main-color-4;
+        border-radius: 50px;
+        height: 65px;
+        input {
+          cursor: pointer;
+          border: 0;
+          color: $main-color-1;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        i {
+          color: $main-color-3;
+          font-size: 25px;
+          @include transition();
+          &:hover {
+            color: $main-color-5;
+          }
+        }
+      }
+    }
+    div.domain-types {
+      .domain-detail {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            span {
+              color: $main-color-2;
+            }
+            strong {
+              color: $main-color-1;
+            }
+          }
+        }
+      }
+    }
+    .more-domains {
+      margin-top: 2.75rem;
+      a {
+        background: $main-color-3;
+        color: #efefef;
+        padding: 15px 30px;
+        border-radius: 50px;
+        @include transition();
+        &:hover {
+          background: $main-color-1;
+          color: $main-color-2;
+        }
+      }
+    }
+  }
+}
