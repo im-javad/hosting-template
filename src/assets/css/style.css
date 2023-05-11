@@ -283,6 +283,7 @@ section#plans .row .plan-box:hover .plan-card {
 }
 section#plans .row .plan-box:hover .plan-button a {
   background: #051622;
+  color: #cca57b;
 }
 
 section#steps {
